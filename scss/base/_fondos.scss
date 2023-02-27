@@ -1,0 +1,42 @@
+
+#body-inicio{
+    background-image: url("/img/FondoInicio.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 768px){
+#body-inicio{
+    background-position: center;
+}
+}
+
+#body-tour{
+    background-image: url("../img/FondoTour.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#body-tienda{
+    background-image: url("../img/FondoTienda.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+#body-galeria{
+    background: rgba(0, 4, 40, 0.514);  
+    background: -webkit-linear-gradient(to right, rgba(0, 78, 146, 0.87), rgba(0, 4, 40, 0.87)), url(/img/fondoGaleria.jpg);
+    background: linear-gradient(to right, rgba(0, 78, 146, 0.87), hsla(234, 100%, 8%, 0.87)), url(/img/fondoGaleria.jpg); 
+    
+}
+
+#body-musica{
+    background: rgba(15, 12, 41, 0.733);  
+    background: -webkit-linear-gradient(to right, rgba(36, 36, 62, 0.514), rgba(48, 43, 99, 0.514), rgba(15, 12, 41, 0.514)), url(../img/bodi5.gif);  
+    background: linear-gradient(to right, rgba(36, 36, 62, 0.418), rgba(48, 43, 99, 0.418), rgba(15, 12, 41, 0.418)), url(../img/bodi5.gif); 
+
+    // background-image: url(../img/bodi5.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

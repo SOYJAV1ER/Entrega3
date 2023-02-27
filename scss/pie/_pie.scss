@@ -1,0 +1,118 @@
+
+@import "../base/variables";
+
+footer{
+    background: linear-gradient(0deg, rgba(2,0,36,0.9598214285714286) 10%, rgba(36,36,52,0.7749474789915967) 46%, rgba(36, 36, 52, 0.726) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    gap: 1rem;
+    margin-top: 5rem;
+    .pie-logo{
+        img{
+            width: 15rem;
+            padding: 1rem 0 0 0;
+            margin-left: 1%;
+
+        }
+    }
+    .contenedor-iconos{
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+            li{
+                position: relative;
+                display: block;
+                color: white;
+                font-size: 15px;
+                height: 30px;
+                width: 30px;
+                background: #000000;
+                line-height: 30px;
+                border-radius: 50%;
+                margin: 0 15px;
+                cursor: pointer;
+                text-decoration: none;
+                transition: .5s;
+                &:before{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    height: inherit;
+                    width: inherit;
+                    background: whitesmoke;
+                    border-radius: 50%;
+                    transform: scale(.9);
+                    z-index: -1;
+                    transition: .5s;
+                    
+                }
+                // :nth-child(1):before{
+                //     background: rgb(17, 17, 17);
+                // }
+                :nth-child(2):before{
+                    background: rgb(245, 242, 242);
+                }
+                // :nth-child(3):before{
+                //     background: rgb(245, 242, 242);
+                // }
+                // :nth-child(4):before{
+                //     background: rgb(245, 242, 242);
+                // }
+                &:hover:before{
+                    filter: blur(3px);
+                    transform: scale(1.2);
+                    box-shadow: 0 0 15px $rojo-logo;
+                }
+                :nth-child(1):hover:before{
+                    box-shadow: 0 0 15px $dorado;
+                }
+                // :nth-child(2):hover:before{
+                //     box-shadow: 0 0 15px rgb(245, 242, 242);
+                // }
+                // :nth-child(3):hover:before{
+                //     box-shadow: 0 0 15px rgb(245, 242, 242);
+                // }
+                // :nth-child(4):hover:before{
+                //     box-shadow: 0 0 15px rgb(245, 242, 242);
+                // }
+                // :nth-child(1):hover{
+                //     // color: rgb(245, 245, 240);
+                //     // box-shadow: 0 0 15px rgb(252, 252, 250);
+                //     // text-shadow: 0 0 15px rgb(218, 216, 216);
+                // }
+                // :nth-child(2):hover{
+                //     color: rgb(245, 245, 240);
+                //     box-shadow: 0 0 15px rgb(252, 252, 250);
+                //     text-shadow: 0 0 15px rgb(218, 216, 216);
+                // }
+                // :nth-child(3):hover{
+                //     color: rgb(245, 245, 240);
+                //     box-shadow: 0 0 15px rgb(252, 252, 250);
+                //     text-shadow: 0 0 15px rgb(218, 216, 216);
+                // }
+                // :nth-child(4):hover{
+                //     color: rgb(245, 245, 240);
+                //     box-shadow: 0 0 15px rgb(252, 252, 250);
+                //     text-shadow: 0 0 15px rgb(218, 216, 216);
+                // }
+            }
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+        }
+    }
+    .pie-derechos{
+        text-align: center;
+        padding: 5px;
+        color: rgb(216, 212, 212);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.5rem;
+        margin-bottom: 8px;
+    }
+}
